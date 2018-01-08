@@ -1,0 +1,213 @@
+/* import google and font awesome fonts */
+@import url('https://fonts.googleapis.com/css?family=Amiri');
+@import url('https://fonts.googleapis.com/css?family=Molengo');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed');
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600);
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+h1 {
+	font-family: 'Molengo', sans-serif;
+	font-weight: 500;
+	margin-bottom: .5rem;
+	line-height: 1.25;
+	color: #313131;
+	padding: 10px;
+  font-size: 42px;
+	text-align: center;
+}
+
+.author {
+	font-family: 'Molengo', sans-serif;
+	font-weight: 200;
+	margin-bottom: .5rem;
+	line-height: 1.25;
+  font-size: 26px;
+	text-align: center;
+}
+
+.institution {
+	font-family: 'Molengo', sans-serif;
+	font-weight: 100;
+  font-size: 20px;
+	text-align: center;
+  color: #AAAAAA;
+  margin: 0px 0 5px 0;
+}
+
+.social {
+	font-family: 'Molengo', sans-serif;
+  font-size: 18px;
+	text-align: center;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+span {
+	margin: 0 5px;
+}
+
+a, a:hover {
+  color: rgb(223, 73, 66);
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+
+.chart-title {
+	font-family: 'Molengo', sans-serif;
+	font-weight: 400;
+	margin-bottom: .5rem;
+	line-height: 1.25;
+	color: #313131;
+	text-rendering: optimizeLegibility;
+	padding: 3px;
+  font-size: 36px;
+  border-bottom: 5px solid rgb(223, 73, 66);
+}
+
+body {
+  font-family: 'Amiri', serif;
+  font-size: 22px;
+  line-height: 1.25;
+  color: rgba(0,0,0,0.8);
+  padding-top: 0;
+}
+
+pre,
+code {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 0.75rem;
+}
+
+pre {
+  margin: 0 0 1rem 0;
+  overflow: auto;
+}
+
+.navbar-inverse {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 500;
+  line-height: 2.25;
+  background: rgb(18, 11, 49);
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
+}
+.navbar-inverse .navbar-brand {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: rgb(168, 166, 179);
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: rgb(255, 255, 255);
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: rgb(255, 255, 255);
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: rgb(168, 166, 179);
+  background-color: transparent;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #ddd;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-inverse .navbar-link {
+  color: #777;
+}
+.navbar-inverse .navbar-link:hover {
+  color: #333;
+}
+.navbar-inverse .btn-link {
+  color: #777;
+}
+.navbar-inverse .btn-link:hover,
+.navbar-inverse .btn-link:focus {
+  color: #333;
+}
+.navbar-inverse .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-inverse .btn-link:hover,
+.navbar-inverse .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-inverse .btn-link:focus {
+  color: #ccc;
+}
+
+
+
+body {
+  padding-top: 60px;
+  background: rgba(0,0,0,0.015);
+}
+
+.section.sidebar {
+  top: 51px;
+
+  /* background-color: #f5f5f5; */
+  background-color: #f8f8f8;
+}
+
+.value-box {
+  color: inherit;
+}
+
+.bg-primary {
+  background-color: rgba(51, 122, 183, 0.4);
+}
+
+.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: rgba(51, 122, 183, 0.4);
+}
+

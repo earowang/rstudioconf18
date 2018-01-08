@@ -1,0 +1,46 @@
+---
+title: "tsibble"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    theme: bootstrap
+    css: custom.css
+    social: menu
+    source: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Row {data-height=180}
+-----------------------------------------------------------------------
+
+###
+
+<h1>Expanding tidyverse to temporal-context data</h1>
+<div class = "author">Earo Wang</div>
+<div class = "institution">Monash University</div>
+<div class = "social">
+  <span><a href="https://github.com/earowang"><i class="fa fa-github" aria-hidden="true"></i> earowang</a></span>
+  <span><a href="https://twitter.com/earowang"><i class="fa fa-twitter" aria-hidden="true"></i>@earowang</a></span>
+</div>
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Motivation
+
+Expanding tidyverse
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
