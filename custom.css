@@ -6,39 +6,36 @@
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-h1 {
+h1, .author, .institution, .social {
 	font-family: 'Molengo', sans-serif;
+	text-align: center;
+}
+
+h1 {
 	font-weight: 500;
 	margin-bottom: .5rem;
 	line-height: 1.25;
 	color: #313131;
 	padding: 10px;
   font-size: 42px;
-	text-align: center;
 }
 
 .author {
-	font-family: 'Molengo', sans-serif;
 	font-weight: 200;
 	margin-bottom: .5rem;
 	line-height: 1.25;
   font-size: 26px;
-	text-align: center;
 }
 
 .institution {
-	font-family: 'Molengo', sans-serif;
 	font-weight: 100;
   font-size: 20px;
-	text-align: center;
   color: #AAAAAA;
   margin: 0px 0 5px 0;
 }
 
 .social {
-	font-family: 'Molengo', sans-serif;
   font-size: 18px;
-	text-align: center;
   padding: 5px;
   margin-top: 5px;
 }
