@@ -5,6 +5,8 @@ output:
     orientation: rows
     theme: bootstrap
     css: custom.css
+    social: ["menu"]
+    vertical_layout: scroll
 ---
 
 ```{r setup, include=FALSE}
@@ -12,12 +14,12 @@ library(flexdashboard)
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
-Row {data-height=120}
+Row {data-height=220}
 -----------------------------------------------------------------------
 
 ###
 
-<h1>Expanding the tidyverse to temporal-context data</h1>
+<h1>Expanding the tidyverse to temporal data <i class="fa fa-line-chart" aria-hidden="true"></i></h1>
 <div class = "author">Earo Wang</div>
 <div class = "institution">Monash University</div>
 <div class = "social">
@@ -29,26 +31,30 @@ Row {data-height=120}
 Column
 -----------------------------------------------------------------------
 
-### Why tsibble? <i class="fa fa-question-circle" aria-hidden="true"></i>
+### <i class="fa fa-question-circle" aria-hidden="true"></i> Why tsibble?
 
-Expanding tidyverse
+Data is often observed or collected over the time space, which we refer to as temporal data. Such kind of data can be frustrating to work with in R. The real-world data arrives in various forms: 
 
-```{r}
+* Data columns of different types contain date-times/dates, numerics, characters and etc.
+* Different components could be extracted from the time indices, such as months, weekdays, and hours, to examine seasonal behaviours.
+* There are implicit missing values for the data collected at regular time interval.
 
-```
+However, none of these input formats are accepted and supported by the traditional time series objects, like `ts`, `zoo` and `xts`. The common data structure underlying these objects is a vector or matrices, which are model-centric rather than data-centric. To easily wrangle, analyse and visualize temporal data, the wide "matrix" format is as if fitting a square peg into a round hole.
 
-### What is a tsibble? <i class="fa fa-table" aria-hidden="true"></i>
+A data class of `tbl_ts` (or "tsibble") has been newly implemented to store and manage temporal data, following the "tidy data" principles. It aims at not only making time series analysis easier but also building a uniformly accepted data format to forecasting.
+
+### <i class="fa fa-table" aria-hidden="true"></i> What is a tsibble?
 
 
 Column 
 -----------------------------------------------------------------------
 
-### What the tsibble can do? <i class="fa fa-list-ul" aria-hidden="true"></i>
+### <i class="fa fa-list-ul" aria-hidden="true"></i> What the tsibble can do?
 
-### Extend the tsibble <i class="fa fa-cogs" aria-hidden="true"></i>
+### <i class="fa fa-cogs" aria-hidden="true"></i> Extend the tsibble
 
 
 Row 
 -----------------------------------------------------------------------
 
-### The future of the tsibble <i class="fa fa-fast-forward" aria-hidden="true"></i>
+### <i class="fa fa-fast-forward" aria-hidden="true"></i> The future of the tsibble
