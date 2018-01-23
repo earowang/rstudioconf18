@@ -19,7 +19,7 @@ Row {data-height=220}
 
 ###
 
-<h1>Expanding the tidyverse to temporal data <i class="fa fa-line-chart" aria-hidden="true"></i></h1>
+<h1>When <span style="color:rgb(223, 73, 66)">t</span>ime <span style="color:rgb(223, 73, 66)">s</span>eries meets t<span style="color:rgb(223, 73, 66)">ibble</span>, it's tsibble!</h1>
 <div class = "author">Earo Wang</div>
 <div class = "institution">Monash University</div>
 <div class = "social">
@@ -28,7 +28,7 @@ Row {data-height=220}
 </div>
 
 
-Column
+Row
 -----------------------------------------------------------------------
 
 ### <i class="fa fa-question-circle" aria-hidden="true"></i> Why tsibble?
@@ -45,16 +45,11 @@ A data class of `tbl_ts` (or "tsibble") has been newly implemented to store and 
 
 ### <i class="fa fa-table" aria-hidden="true"></i> What is a tsibble?
 
-
-Column 
------------------------------------------------------------------------
-
 ### <i class="fa fa-list-ul" aria-hidden="true"></i> What the tsibble can do?
 
 ### <i class="fa fa-cogs" aria-hidden="true"></i> Extend the tsibble
 
-
-Row 
+Row {data-height=120}
 -----------------------------------------------------------------------
 
 ### <i class="fa fa-fast-forward" aria-hidden="true"></i> The future of the tsibble
