@@ -9,8 +9,16 @@ output:
     vertical_layout: scroll
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, cache = FALSE}
 library(flexdashboard)
+library(knitr)
+options(htmltools.dir.version = FALSE, tibble.width = 50, tibble.print_min = 5)
+opts_chunk$set(
+  echo = TRUE, warning = FALSE, message = FALSE, comment = "#>",
+  fig.path = 'figure/', cache.path = 'cache/', fig.align = 'center', 
+  fig.width = 12, fig.height = 11, fig.show = 'hold', dev = 'svglite',
+  cache = TRUE
+)
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
@@ -44,6 +52,14 @@ However, none of these input formats are accepted and supported by the tradition
 A data class of `tbl_ts` (or "tsibble") has been newly implemented to store and manage temporal data, following the "tidy data" principles. It aims at not only making time series analysis easier but also building a uniformly accepted data format to forecasting.
 
 ### <i class="fa fa-table" aria-hidden="true"></i> What is a tsibble?
+
+First of all, "tsibble" is pronounced as `/ˈt͡sɪbəl/`, where "ts" sounds like the one in "cats". Second of all, it is built on top of "tibble", which frees time series from restrictive "matrix" structure. How to create a tsibble (or `tbl_ts`) object? The "index" and "key" concepts form the building blocks of the tsibble.
+
+```{r tsibble}
+library(tsibble)
+as_tsibble(pedestrian, key = id(Sensor), index = Date_Time)
+```
+
 
 ### <i class="fa fa-list-ul" aria-hidden="true"></i> What the tsibble can do?
 
